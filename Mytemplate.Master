@@ -1,0 +1,266 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Mytemplate.master.cs" Inherits="Onlineshop.Mytemplate" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            height: 23px;
+        }
+        .auto-style4 {
+            height: 23px;
+            width: 172px;
+        }
+        .auto-style5 {
+            width: 172px;
+        }
+        .auto-style6 {
+            height: 23px;
+            width: 243px;
+        }
+        .auto-style7 {
+            width: 243px;
+        }
+        .auto-style8 {
+            height: 23px;
+            width: 317px;
+        }
+        .auto-style9 {
+            width: 317px;
+        }
+        .auto-style10 {
+            height: 23px;
+            width: 161px;
+        }
+        .auto-style11 {
+            width: 161px;
+        }
+        .auto-style12 {
+            height: 23px;
+            width: 339px;
+        }
+        .auto-style13 {
+            width: 339px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Image ID="Image2" runat="server" Height="353px" ImageUrl="~/banner1.jpg" Width="1587px" />
+        <div>
+        </div>
+        <table style="width: 100%;">
+            <tr>
+                <td class="auto-style1">
+                    <asp:Label ID="Label1" runat="server" ForeColor="#CC0000" Text="Welcome to master page"></asp:Label>
+                </td>
+                <td class="auto-style1" colspan="5"></td>
+                <td class="auto-style1">&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style4" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: bold; font-style: normal; font-variant: normal; text-transform: capitalize; color: #0000FF; background-color: #00FFFF;">
+                    &nbsp;</td>
+                <td class="auto-style4" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: bold; font-style: normal; font-variant: normal; text-transform: capitalize; color: #0000FF; background-color: #00FFFF;">
+                    <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Home.aspx">Home</asp:HyperLink>
+                </td>
+                <td class="auto-style10" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: bold; font-style: normal; font-variant: normal; text-transform: capitalize; color: #0000FF; background-color: #00FFFF;">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink>
+                </td>
+                <td class="auto-style6" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: bold; font-style: normal; font-variant: normal; text-transform: capitalize; color: #0000FF; background-color: #00FFFF;">
+                    <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Register.aspx">Register</asp:HyperLink>
+                </td>
+                <td class="auto-style8" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: bold; font-style: normal; font-variant: normal; text-transform: capitalize; color: #0000FF; background-color: #00FFFF;">
+                    <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Product.aspx">Products</asp:HyperLink>
+                </td>
+                <td class="auto-style12" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: bold; font-style: normal; font-variant: normal; text-transform: capitalize; color: #0000FF; background-color: #00FFFF;">
+                    <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Buy.aspx">Buy</asp:HyperLink>
+                </td>
+                <td class="auto-style1" style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: medium; font-weight: bold; font-style: normal; font-variant: normal; text-transform: capitalize; color: #0000FF; background-color: #00FFFF;">
+                    <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Logout.aspx">Logout</asp:HyperLink>
+                </td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                    <br />
+                    <asp:SiteMapPath ID="SiteMapPath1" runat="server">
+                    </asp:SiteMapPath>
+                    <br />
+                    <br />
+                    <br />
+                </td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:TreeView>
+                </td>
+                <td colspan="5">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+                </td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style4">
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td class="auto-style4"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style12"></td>
+                <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style4"></td>
+                <td class="auto-style4"></td>
+                <td class="auto-style10"></td>
+                <td class="auto-style6"></td>
+                <td class="auto-style8"></td>
+                <td class="auto-style12"></td>
+                <td class="auto-style1"></td>
+            </tr>
+            <tr>
+                <td class="auto-style5">
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:Menu>
+                </td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style5">&nbsp;</td>
+                <td class="auto-style11">&nbsp;</td>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style13">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
